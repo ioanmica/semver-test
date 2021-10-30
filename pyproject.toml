@@ -1,0 +1,28 @@
+
+[tool.poetry]
+name = "semver-test"
+version = "0.1.1"
+description = "Test semantic versioning process with a python project"
+authors = ["user <user@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+python-semantic-release = "^7.19.2"
+
+[tool.semantic_release]
+version_variable = [
+    "src/__main__.py:__version__"
+]
+version_toml = [
+    "pyproject.toml:tool.poetry.version"
+]
+version_pattern = [
+    "README.md:rev: v{version}" 
+]
+branch = "main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
