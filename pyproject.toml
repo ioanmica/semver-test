@@ -1,0 +1,15 @@
+
+[tool.poetry]
+name = "semver-test"
+version = "0.1.0"
+description = "Test semantic versioning process with a python project"
+authors = ["user <user@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
