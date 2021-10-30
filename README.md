@@ -5,4 +5,5 @@ Test semantic versioning process with a python project
 ## Steps
 
 * protect main branch and allow PRs only (Settings -> Branches -> add new rule for main) + test it
+* test main branch protection -> git push origin main
 * 
