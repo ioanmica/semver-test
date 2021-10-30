@@ -1,6 +1,13 @@
 # semver-test
 Test semantic versioning process with a python project
 
+(https://blog.guilatrova.dev/semantic-release-to-automate-versioning-and-publishing-to-pypi-with-github-actions/)
+
+## Version display
+
+```yaml
+rev: v0.1.0
+```
 
 ## Steps
 
@@ -17,4 +24,20 @@ Init poetry project
 Init Semantic-release
 
 * poetry add -D python-semantic-release
-* 
+* define all the places where I want the version updated
+
+``` toml
+[tool.semantic_release]
+version_variable = [
+    "src/__main__.py:__version__"
+]
+version_toml = [
+    "pyproject.toml:tool.poetry.version"
+]
+version_pattern = [
+    "README.md:rev: v{version}" 
+]
+branch = "main"      # release from main branch
+major_on_zero = true # until release become stable
+# build_command="pip <something>"  # generate the final package
+```
