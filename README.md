@@ -6,7 +6,7 @@ Test semantic versioning process with a python project
 ## Version display
 
 ```yaml
-rev: v0.1.0
+rev: v0.1.1
 ```
 
 ## Steps

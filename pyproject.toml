@@ -1,7 +1,7 @@
 
 [tool.poetry]
 name = "semver-test"
-version = "0.1.0"
+version = "0.1.1"
 description = "Test semantic versioning process with a python project"
 authors = ["user <user@example.com>"]
 
