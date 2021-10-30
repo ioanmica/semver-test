@@ -16,4 +16,5 @@ Init poetry project
 
 Init Semantic-release
 
+* poetry add -D python-semantic-release
 * 
